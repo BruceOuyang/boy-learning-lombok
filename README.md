@@ -1,6 +1,7 @@
 # boy-learning-lombok
 
 参考资料：  
+1. [Lombok官方资料](https://projectlombok.org/features/all)
 1. [Lombok：让JAVA代码更优雅](http://blog.didispace.com/java-lombok-1/)
 1. [Java开发神器Lombok的使用与原理](http://blog.didispace.com/java-lombok-how-to-use/)
 

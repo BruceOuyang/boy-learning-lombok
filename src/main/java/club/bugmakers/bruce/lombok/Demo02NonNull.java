@@ -3,7 +3,7 @@ package club.bugmakers.bruce.lombok;
 import lombok.NonNull;
 
 /**
- * @description: @NonNull：注解能够为方法或构造函数的参数提供非空检查
+ * @description: @NonNull：能够为方法或构造函数的参数提供非空检查
  * @author: ouyangqiangqiang
  * @date: 2018/8/29 11:59
  */
