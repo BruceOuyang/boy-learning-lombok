@@ -11,8 +11,18 @@ public class Demo01Val {
 
     public static void main(String [] args) {
         val a = "A";
-
-        // 相当于
-        final String a2 = "A";
     }
 }
+
+//    public   static void main(String[] args) {
+//
+//        val setVar = new HashSet<String>();
+//        val listsVar = new   ArrayList<String>();
+//        val mapVar = new HashMap<String,   String>();
+//
+//        //=>上面代码相当于如下：
+//        final Set<String> setVar2 = new   HashSet<>();
+//        final List<String> listsVar2 = new   ArrayList<>();
+//        final Map<String, String> maps2 =   new HashMap<>();
+//
+//    }

@@ -12,13 +12,18 @@ public class Demo02NonNull {
     public void notNullExample(@NonNull Integer id) {
         // doSomething
     }
-
-    // 相当于
-    public void notNullExample2(Integer id) {
-        if (id == null) {
-
-        } else {
-            throw new NullPointerException("null");
-        }
-    }
 }
+
+//    public void notNullExample(@NonNull String string) {
+//        //方法内的代码
+//    }
+//
+//    //=>上面代码相当于如下：
+//
+//    public void notNullExample(String string) {
+//        if (string != null) {
+//            //方法内的代码相当于如下：
+//        } else {
+//            throw new NullPointerException("null");
+//        }
+//    }

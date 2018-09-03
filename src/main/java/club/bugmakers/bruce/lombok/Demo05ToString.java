@@ -8,7 +8,7 @@ import lombok.ToString;
  * @date: 2018/8/29 15:17
  */
 @ToString(callSuper=true,exclude="other")
-public class Demo05ToString extends Demo {
+public class Demo05ToString {
 
     private boolean someBoolean = true;
     private String content = "askdfj";
@@ -18,16 +18,16 @@ public class Demo05ToString extends Demo {
 /**
  * 相当于
  */
-class Demo05Compare extends Demo {
-
-    private boolean someBoolean = true;
-    private String content = "askdfj";
-    private String other = "sldkjfkd";
-
-    @Override
-    public String toString() {
-        return "Foo(super=" + super.toString() +
-                ", someBoolean=" + someBoolean +
-                ", content=" + content;
-    }
-}
+//class Demo05Compare {
+//
+//    private boolean someBoolean = true;
+//    private String content = "askdfj";
+//    private String other = "sldkjfkd";
+//
+//    @Override
+//    public String toString() {
+//        return "Foo(super=" + super.toString() +
+//                ", someBoolean=" + someBoolean +
+//                ", content=" + content;
+//    }
+//}

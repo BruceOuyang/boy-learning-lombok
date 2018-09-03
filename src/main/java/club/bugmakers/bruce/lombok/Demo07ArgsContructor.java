@@ -7,37 +7,47 @@ import lombok.*;
  * @author: ouyangqiangqiang
  * @date: 2018/8/29 15:40
  */
-@NoArgsConstructor
 @RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
 public class Demo07ArgsContructor {
-    private Integer id;
-    @NonNull private String name;
+
+    private int x, y;
+    @NonNull private String description;
+
+    @NoArgsConstructor
+    public static class NoArgsExample {
+        @NonNull private String field;
+    }
+
 }
 
-/**
- * 相当于
- */
-class Demo07Compare {
-    private Integer id;
-    private String name;
-
-    public Demo07Compare () {
-    }
-
-    private Demo07Compare (String name) {
-        this.name = name;
-    }
-
-    public static Demo07Compare of (String name) {
-        if (name == null) {
-            throw new NullPointerException("name");
-        }
-        return new Demo07Compare(name);
-    }
-
-    protected Demo07Compare(Integer id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-}
+//public class Demo07ArgsContructor<T> {
+//    private int x, y;
+//    @NonNull private String description;
+//
+//    private Demo07ArgsContructor(String description) {
+//        if (description == null) throw new NullPointerException("description");
+//        this.description = description;
+//    }
+//
+//    public static <T> Demo07ArgsContructorof(T description) {
+//        return new Demo07ArgsContructor(description);
+//    }
+//
+//    @java.beans.ConstructorProperties({"x", "y", "description"})
+//    protected Demo07ArgsContructor(int x, int y, String description) {
+//        if (description == null) {
+//            throw new NullPointerException("description");
+//        }
+//        this.x = x;
+//        this.y = y;
+//        this.description = description;
+//    }
+//
+//    public static class NoArgsExample {
+//        @NonNull private String field;
+//
+//        public NoArgsExample() {
+//        }
+//    }
+//}
